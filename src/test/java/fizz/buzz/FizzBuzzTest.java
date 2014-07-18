@@ -3,13 +3,13 @@ package fizz.buzz;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import static fizz.buzz.FizzBuzz.BUZZ;
 import static fizz.buzz.FizzBuzz.FIZZ;
 import static fizz.buzz.FizzBuzz.FIZZ_BUZZ;
 import static fizz.buzz.FizzBuzz.NO_SAUCE;
+import static java.util.Arrays.asList;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
@@ -22,32 +22,24 @@ public class FizzBuzzTest {
 
     private FizzBuzz fz = new FizzBuzz();
 
-    private static List<Integer> divsBy3 = new ArrayList<>();
+    private static List<Integer> divsBy3;
 
-    private static List<Integer> divsBy5 = new ArrayList<>();
+    private static List<Integer> divsBy5;
 
-    private static List<Integer> divsBy53 = new ArrayList<>();
+    private static List<Integer> divsBy53;
 
-    private static List<Integer> noSauces = new ArrayList<>();
+    private static List<Integer> noSauces;
 
     @BeforeClass
     public static void before() {
 
-        divsBy3.add(-3);
-        divsBy3.add(3);
-        divsBy3.add(6);
-        divsBy3.add(9);
+        divsBy3 = asList(-3, 3, 6, 9);
 
-        divsBy5.add(-5);
-        divsBy5.add(5);
-        divsBy5.add(10);
+        divsBy5 = asList(-5, 5, 10);
 
-        divsBy53.add(15);
-        divsBy53.add(30);
+        divsBy53 = asList(15, 30);
 
-        noSauces.add(7);
-        noSauces.add(13);
-        noSauces.add(17);
+        noSauces = asList(7, 13, 17);
     }
 
     @Test
