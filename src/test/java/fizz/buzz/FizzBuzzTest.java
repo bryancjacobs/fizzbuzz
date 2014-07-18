@@ -70,7 +70,7 @@ public class FizzBuzzTest {
         assertEquals(noSauces, NO_SAUCE);
     }
 
-    private void assertEquals(List<Integer> testData, String expected) {
-        testData.forEach(number -> assertThat(fz.fizzBuzz(number), is(expected)));
+    private void assertEquals(List<Integer> numbers, String expected) {
+        numbers.forEach(number -> assertThat(fz.fizzBuzz(number), is(expected)));
     }
 }
