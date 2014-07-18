@@ -17,19 +17,19 @@ public class FizzBuzz {
 
     public String fizzBuzz(int number) {
 
-        boolean isDivisableBy3 = number % 3 == 0;
+        boolean isDivisibleBy3 = number % 3 == 0;
 
-        boolean isDivisableBy5 = number % 5 == 0;
+        boolean isDivisibleBy5 = number % 5 == 0;
 
-        boolean isDivisableByBoth = isDivisableBy3 && isDivisableBy5;
+        boolean isDivisibleByBoth = isDivisibleBy3 && isDivisibleBy5;
 
-        if (isDivisableByBoth) {
+        if (isDivisibleByBoth) {
             return FIZZBUZZ;
         }
-        else if (isDivisableBy5) {
+        else if (isDivisibleBy5) {
             return BUZZ;
         }
-        else if (isDivisableBy3) {
+        else if (isDivisibleBy3) {
             return FIZZ;
         }
         else {
