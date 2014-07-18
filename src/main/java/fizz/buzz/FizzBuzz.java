@@ -17,23 +17,16 @@ public class FizzBuzz {
 
     public String fizzBuzz(int number) {
 
-        boolean isDivisibleBy3 = number % 3 == 0;
+        boolean isFizz = number % 3 == 0;
 
-        boolean isDivisibleBy5 = number % 5 == 0;
+        boolean isBuzz = number % 5 == 0;
 
-        boolean isDivisibleByBoth = isDivisibleBy3 && isDivisibleBy5;
+        boolean isFizzBuzz = isFizz && isBuzz;
 
-        if (isDivisibleByBoth) {
-            return FIZZ_BUZZ;
-        }
-        else if (isDivisibleBy5) {
-            return BUZZ;
-        }
-        else if (isDivisibleBy3) {
-            return FIZZ;
-        }
-        else {
-            return NO_SAUCE;
-        }
+        if (isFizzBuzz) return FIZZ_BUZZ;
+        if (isBuzz) return BUZZ;
+        if (isFizz) return FIZZ;
+        return NO_SAUCE;
+
     }
 }
