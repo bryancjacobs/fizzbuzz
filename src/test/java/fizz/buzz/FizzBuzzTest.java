@@ -6,7 +6,10 @@ import org.junit.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-import static fizz.buzz.FizzBuzz.*;
+import static fizz.buzz.FizzBuzz.BUZZ;
+import static fizz.buzz.FizzBuzz.FIZZ;
+import static fizz.buzz.FizzBuzz.FIZZ_BUZZ;
+import static fizz.buzz.FizzBuzz.NO_SAUCE;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
