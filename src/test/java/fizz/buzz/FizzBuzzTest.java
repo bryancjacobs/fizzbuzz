@@ -59,7 +59,7 @@ public class FizzBuzzTest {
 
     @Test
     public void shouldBeFizzBuzz() {
-        assertEquals(divsBy53, FIZZBUZZ);
+        assertEquals(divsBy53, FIZZ_BUZZ);
     }
 
     @Test

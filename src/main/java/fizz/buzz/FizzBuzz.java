@@ -11,7 +11,7 @@ public class FizzBuzz {
 
     public static final String FIZZ = "FIZZ";
 
-    public static final String FIZZBUZZ = FIZZ + BUZZ;
+    public static final String FIZZ_BUZZ = FIZZ + BUZZ;
 
     public static final String NO_SAUCE = "No Sauce";
 
@@ -24,7 +24,7 @@ public class FizzBuzz {
         boolean isDivisibleByBoth = isDivisibleBy3 && isDivisibleBy5;
 
         if (isDivisibleByBoth) {
-            return FIZZBUZZ;
+            return FIZZ_BUZZ;
         }
         else if (isDivisibleBy5) {
             return BUZZ;
