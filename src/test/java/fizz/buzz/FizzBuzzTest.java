@@ -22,39 +22,39 @@ public class FizzBuzzTest {
 
     private FizzBuzz fz = new FizzBuzz();
 
-    private static List<Integer> divsBy3;
+    private static List<Integer> fizzes;
 
-    private static List<Integer> divsBy5;
+    private static List<Integer> buzzes;
 
-    private static List<Integer> divsBy53;
+    private static List<Integer> fizzBuzzes;
 
     private static List<Integer> noSauces;
 
     @BeforeClass
     public static void before() {
 
-        divsBy3 = asList(-3, 3, 6, 9);
+        fizzes = asList(-3, 3, 6, 9);
 
-        divsBy5 = asList(-5, 5, 10);
+        buzzes = asList(-5, 5, 10);
 
-        divsBy53 = asList(15, 30);
+        fizzBuzzes = asList(15, 30);
 
         noSauces = asList(7, 13, 17);
     }
 
     @Test
     public void shouldBeFizz() {
-        assertEquals(divsBy3, FIZZ);
+        assertEquals(fizzes, FIZZ);
     }
 
     @Test
     public void shouldBeBuzz() {
-        assertEquals(divsBy5, BUZZ);
+        assertEquals(buzzes, BUZZ);
     }
 
     @Test
     public void shouldBeFizzBuzz() {
-        assertEquals(divsBy53, FIZZ_BUZZ);
+        assertEquals(fizzBuzzes, FIZZ_BUZZ);
     }
 
     @Test
