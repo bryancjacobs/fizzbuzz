@@ -24,8 +24,11 @@ public class FizzBuzz {
         boolean isFizzBuzz = isFizz && isBuzz;
 
         if (isFizzBuzz) return FIZZ_BUZZ;
+
         if (isBuzz) return BUZZ;
+
         if (isFizz) return FIZZ;
+
         return NO_SAUCE;
 
     }
