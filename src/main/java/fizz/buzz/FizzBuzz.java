@@ -7,9 +7,9 @@ package fizz.buzz;
  */
 public class FizzBuzz {
 
-    public static final String BUZZ = "BUZZ";
-
     public static final String FIZZ = "FIZZ";
+
+    public static final String BUZZ = "BUZZ";
 
     public static final String FIZZ_BUZZ = FIZZ + BUZZ;
 
@@ -25,9 +25,9 @@ public class FizzBuzz {
 
         if (isFizzBuzz) return FIZZ_BUZZ;
 
-        if (isBuzz) return BUZZ;
-
         if (isFizz) return FIZZ;
+
+        if (isBuzz) return BUZZ;
 
         return NO_SAUCE;
 
