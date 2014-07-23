@@ -37,9 +37,9 @@ public class FizzBuzzTest {
 
         buzzes = asList(-5, 5, 10);
 
-        fizzBuzzes = asList(15, 30);
+        fizzBuzzes = asList(-15, 15, 30);
 
-        noSauces = asList(7, 13, 17);
+        noSauces = asList(-7, 7, 13, 17);
     }
 
     @Test
